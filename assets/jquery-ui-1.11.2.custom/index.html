@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+	<script src="../js/jquery-2.1.1.min.js"></script>
+<script src="jquery-ui.js"></script>
+</head>
+<body>
+<button>123</button>
+<div class="popUp">
+                    <div id="effect" style="position: relative; box-sizing: border-box; right: -20%;width:100px; height:100px; background-color:rgba(92, 184, 92, 0.4); border-radius:50%;display:none" class="firstPop">
+                            <div class="secondPop">
+                                <div class="thirdPop">
+                                
+                                </div>
+                            </div>
+                    </div>
+                </div> 
+
+<script>
+$("button").click(function(){
+	 $('#effect').show({
+	 effect: "scale",
+	  duration: 900,
+	  easing: 'easeOutElastic', 
+	  complete: function(){alert("hi")}
+	});
+})
+</script>
+</body>
+</html>
